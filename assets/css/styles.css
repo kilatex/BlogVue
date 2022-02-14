@@ -153,7 +153,7 @@ body {
     background: white;
     color:rgb(88, 88, 88);
     border: none;
-    padding: 5px;
+    padding: 2px 50px;
 }
 .btn-form:hover{
     background: #444;
@@ -309,12 +309,12 @@ textarea{
 .article-item .date{
     display: block;
     width: 100%;
-    color: rgb(122, 122, 122);
+    color: rgb(185, 183, 183);
 }
 
 .article-item a{
     display: block;
-    color: #444;
+    color: white;
     text-decoration: none;
     margin-top: 10px;
 }
