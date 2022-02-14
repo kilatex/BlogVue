@@ -109,6 +109,10 @@ body {
     color: white;
     text-shadow: 0px 0px 5px #444;
 
+
+}
+
+.bg-green{
     /*DEGRADADO CSS*/   
     background: rgba(119,194,81,1);
     background: -moz-radial-gradient(center, ellipse cover, rgba(119,194,81,1) 0%, rgba(8,145,42,1) 100%);
@@ -118,9 +122,8 @@ body {
     background: -ms-radial-gradient(center, ellipse cover, rgba(119,194,81,1) 0%, rgba(8,145,42,1) 100%);
     background: radial-gradient(ellipse at center, rgba(119,194,81,1) 0%, rgba(8,145,42,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c251', endColorstr='#08912a', GradientType=1 );
-
-
 }
+
 
 #slider h1{
     margin-top: 0.2px;
@@ -155,8 +158,9 @@ body {
     border: none;
     padding: 2px 50px;
 }
+
 .btn-form:hover{
-    background: #444;
+    background: #09a330;
     color:white;
     cursor: pointer;
 }
@@ -264,11 +268,9 @@ textarea{
 
 
 #footer{
-    background: #f7f7f7;
     width: 100%;
     height: 70px;
     line-height: 70px;
-    color: #444;
 }
 
 #footer p {
