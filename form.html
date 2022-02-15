@@ -2,20 +2,20 @@
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <title>Web Example</title>
+        <title>Maquetación para el Master en Frameworks JavaScript</title>
 
         <!--HOJA DE ESTILOS-->
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
     </head>
     <body>
-        <header class="header">
+        <header id="header">
             <div class="center">
                 <!-- LOGO -->
                 <div id="logo">
                     <img src="assets/images/vue.png" class="app-logo" alt="Logotipo" />
                     <span id="brand">
-                        <strong>Vue</strong>Website
+                        <strong>Curso</strong>Vue
                     </span>
                 </div>
                 
@@ -44,54 +44,51 @@
                 <div class="clearfix"></div>
             </div>
         </header>
-
-        <div id="slider" class="slider-big bg-green ">
-            <h1>Welcome to this basic page to practice Vue.JS</h1>
-            <a href="#" class="btn btn-white">Go To Blog</a>
-        </div>
-
-        <div class="center">
-            
-            <section id="content">
-                <h2 class="subheader">Lastest Posts</h2>
-                
-                <script type="text/javascript">
-                    window.addEventListener("load", function(){
-                        var template = document.getElementById("article-template");
-                        var articles = document.getElementById("articles");
-
-                        for(var i = 1; i <= 5; i++){
-                            var clonado = template.cloneNode(true);
-                            clonado.removeAttribute("id");
-
-                            var h2 = clonado.getElementsByTagName("h2")[0];
-                            h2.innerHTML = h2.textContent + ' ' + i;
-
-                            articles.appendChild(clonado);
-                        }
         
-                    });
-                </script>
+        <div class="center form-box">
+            <section id="content" class="bg-form bg-green">
 
-                <!--Listado articulos-->
-                <div id="articles">
-                    <article class="article-item" id="article-template">
-                        <div class="image-wrap">
-                            <img src="https://unhabitatmejor.leroymerlin.es/sites/default/files/styles/header_category/public/2018-10/4%20paisaje%20macedonia.jpg?itok=AELknmF8" alt="Paisaje" />
-                        </div>
-    
-                        <h2>Post</h2>
-                        <span class="date">
-                            Two Days Ago
-                        </span>
-                        <a href="#">Read More</a>
+                <h1 class="subheader">Form</h1>
 
-                        <div class="clearfix"></div>
-                    </article>
-
-                    <!--AÑADIR ARTICULOS VIA JS-->
-
-                </div>
+                <form class="mid-form ">
+                     <div class="form-group">
+                         <label for="nombre">Name</label>
+                         <input type="text" name="name" />
+                     </div>
+ 
+                     <div class="form-group">
+                         <label for="apellidos">Last Name</label>
+                         <input type="text" name="surname" />
+                     </div>
+ 
+                     <div class="form-group">
+                         <label for="bio">Biography</label>
+                         <textarea name="bio"></textarea>
+                     </div>
+ 
+                     <div class="form-group radiobuttons">
+                         <div class="radio-box">
+                             <input type="radio" name="genero" value="man" id="man" /> 
+                             <label for="man">Man</label>
+                         </div>
+ 
+                         <div class="radio-box d-flex">
+                             <input type="radio" name="genero" value="man" id="woman" /> 
+                             <label for="woman">Woman</label>
+                         </div>
+ 
+                         <div class="radio-box d-flex">
+                             <input type="radio" name="genero" value="man" id="other" /> 
+                             <label for="other">Other</label>
+                         </div>
+ 
+                     </div>
+ 
+                     <div class="clearfix"></div>
+ 
+                     <input type="submit" value="Submit" class="btn-submit  btn-form" />
+ 
+                </form>
                 
             </section>
 
@@ -114,10 +111,10 @@
             <div class="clearfix"></div>
         </div>
 
-        <footer id="footer" class="bg-green">
-            <div class="center" >
+        <footer id="footer" class="footer-form bg-green">
+            <div class="center">
                 <p>
-                    &copy; Website developed by Kilatex
+                    &copy; Web developed by Kilatex
                 </p>
             </div>
         </footer>
