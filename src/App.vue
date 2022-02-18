@@ -1,10 +1,32 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
+    <HeaderComponent></HeaderComponent>
+    <div class="center">
+    </div>
+    <ArticlesComponent></ArticlesComponent>    
+
   </div>
-  <router-view/>
 </template>
+
+
+<script>
+
+import ArticlesComponent from './components/ArticlesComponent.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
+import Sidebar from './components/SidebarComponent.vue';
+
+
+export default {
+  name: 'app',
+  components:{
+    ArticlesComponent,
+    HeaderComponent,
+    Sidebar
+  }
+  
+}
+</script>
+
 
 <style>
 #app {
@@ -27,4 +49,7 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
+@import './assets/css/styles.css';
 </style>
