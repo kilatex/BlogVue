@@ -16,13 +16,13 @@
                         <router-link to="/">Home</router-link>
                     </li>
                     <li>
-                        <router-link to="/blog">Blog</router-link>
+                        <router-link to="/about">About</router-link>
                     </li>
                     <li>
                         <router-link to="/form">Form</router-link>
                     </li>
                     <li>
-                        <a href="#">Page 1</a>
+                        <router-link to="/article-detail">Page 1</router-link>
                     </li>
                     <li>
                         <a href="#">Page 2</a>

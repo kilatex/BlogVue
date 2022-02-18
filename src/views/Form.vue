@@ -1,6 +1,6 @@
 <template>
-<div class="center">
-      <section id="content" class="bg-form bg-green">
+<div class="form-vue">
+      <section class="">
 
                 <h1 class="subheader">Form</h1>
 
@@ -50,7 +50,14 @@
 </template>
 
 <style>
-  
+  .form-vue{
+    margin: auto;
+    width: 40%;
+    background: #09a330;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px 00px 20px 0px; 
+  }
 </style>
 <script>
 export default {

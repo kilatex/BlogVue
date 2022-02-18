@@ -1,5 +1,27 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+    <section>
+            <div class="center">
+        <h2 class="title-about">About</h2>
+
+
+        </div>
+
+    </section>
+    
+    
 </template>
+
+
+
+<style>
+.title-about{
+    text-align: start;
+}
+
+</style>
+<script>
+
+export default {
+    name: 'About'
+}
+</script>

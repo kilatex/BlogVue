@@ -125,13 +125,8 @@ body {
 
 }
 
-.bg-form{
-    width: 60%;
-    margin: auto;
-    padding: 40px 10px !important;
-    border-radius: 20px;
 
-}
+
 .form-box{
     width: 60% !important;
     display: flex;
@@ -246,7 +241,7 @@ body {
 }
 
 .mid-form{
-    width: 50%;
+    width: 410px;
     margin: 0px auto;
 }
 
@@ -440,9 +435,9 @@ textarea{
        line-height: 43px;
     }
 
-    #content{
+    #content , .form-vue{
         float:none;
-        width: 100%;
+        width: 100% !important;
     }
 
     #sidebar{
