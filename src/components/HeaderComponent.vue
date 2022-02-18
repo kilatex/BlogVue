@@ -13,13 +13,13 @@
             <nav id="menu">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <router-link to="/">Home</router-link>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <router-link to="/blog">Blog</router-link>
                     </li>
                     <li>
-                        <a href="form.html">Form</a>
+                        <router-link to="/form">Form</router-link>
                     </li>
                     <li>
                         <a href="#">Page 1</a>
