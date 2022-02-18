@@ -9,7 +9,7 @@ export default {
     name: 'MiComponente',
     data(){
         return {
-            subtitle = "Hola parce que tal como está todo",
+            subtitle : "Hola parce que tal como está todo"
         }
     }
 }
