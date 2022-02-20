@@ -3,6 +3,9 @@ import Home from '../views/Home.vue';
 import Form from '../views/Form.vue';
 import About from '../views/About.vue';
 import ArticleDetail from '../views/ArticleDetail.vue';
+import Page from '../views/Page.vue';
+import ErrorView from '../views/ErrorView.vue';
+
 
 const routes = [
   {
@@ -21,10 +24,19 @@ const routes = [
     component: About
   }, 
   {
-
     path: '/article-detail',
     name: 'ArticleDetail',
     component: ArticleDetail
+  },
+  {
+    path: '/page/:id?',
+    name: 'Page',
+    component: Page
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'Error',
+    component: ErrorView
   }
 ]
 

@@ -386,6 +386,9 @@ textarea{
     border:none;
 }
 
+#menu .active{
+    color: #09c839;
+}
 /*RESPONSIVE*/
 
 /*Desde la anchura 963px hasta la anchura 1488px de pantalla*/
