@@ -14,7 +14,13 @@
                 <div class="condicional">
                     <p class="alert-mala" v-if="!text">No hay Texto en el INPUT</p> 
                    <p class="alert-buena" v-if="text">Si hay Texto, el texto es:  {{text}} </p>
+                </div>
 
+                <div class="movies">
+                    <h3>Movies List</h3>
+                    <ul>
+                        <li class="list-movies" v-for= "movie in movies" :key="movie" >{{movie}}</li>
+                    </ul>
                 </div>
             </div>
 
@@ -44,6 +50,11 @@
 .directivas{
     margin-bottom: 40px;
 }
+.list-movies{
+    list-style: none;
+    font-weight: bold;
+    
+}
 
 .input-model{
     width: 250px !important;
@@ -60,7 +71,8 @@ export default {
     data(){
         return{
         id_from_url  : null,
-        text: ''
+        text: '',
+        movies: ['Batman vs Superman', 'Anabelle', 'Lio Messi', 'Cristiano']
 
         }
     }
