@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Slider></Slider>
+    <Slider texto="Welcome to this basic page to practice Vue.JS" home="true"></Slider>
       <div class="center">
       <Articles></Articles>
       <Sidebar></Sidebar>

@@ -1,8 +1,13 @@
 <template>
     <section>
-            <div class="center">
-        <h2 class="title-about">About</h2>
+          <Slider texto="Messi"></Slider>
+        <div class="center">
+            <section id="content">
+            <h2 class="title-about">About</h2>
 
+            </section>
+
+            <Sidebar></Sidebar>
 
         </div>
 
@@ -20,8 +25,13 @@
 
 </style>
 <script>
-
+import Slider from '../components/SliderComponent.vue';
+import Sidebar from '../components/SidebarComponent.vue';
 export default {
-    name: 'About'
+    name: 'About',
+    components: {
+    Slider,
+    Sidebar,
+  }
 }
 </script>

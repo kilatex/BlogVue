@@ -4,21 +4,12 @@
 
     <!--Listado articulos-->
     <div id="articles">
-      <article class="article-item" v-for="movie in movies" :key="movie">
-        <div class="image-wrap">
-          <img :src="movie.image" :alt="movie.name" />
+      <div v-if="favorite">
+        <h6>Your Favorite Movie is : {{favorite.name}}</h6>
+      </div>
+        <div class="" v-for="movie in movies" :key="movie">
+            <Movie @favorite="favoriteReceived" :movie="movie"></Movie>
         </div>
-        <h2>{{movie.name}}</h2>
-        <span class="date" :class="{
-          green: movie.year > 2016,
-          red: movie.year < 2016,
-
-        }"> {{movie.year}} </span>
-        <a href="#">Read More</a>
-
-        <div class="clearfix"></div>
-      </article>
-
       <!--AÑADIR ARTICULOS VIA JS-->
     </div>
   </section>
@@ -42,10 +33,21 @@
 </style>
 
 <script>
+import Movie from './Movie.vue';
+
 export default {
   name: "ArticlesComponent",
+  components: {
+    Movie
+  },
+  methods:{
+    favoriteReceived(favorite){
+      this.favorite = favorite;
+    }
+  },
   data() {
     return {
+      favorite: null,
       movies: [
         {
           name: "Captain America Civil War",
