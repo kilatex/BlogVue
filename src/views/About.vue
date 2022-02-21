@@ -26,6 +26,8 @@
     text-align: start;
 }
 
+
+
 </style>
 <script>
 import Slider from '../components/SliderComponent.vue';

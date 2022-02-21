@@ -99,6 +99,12 @@
     background: red;
     padding: 0px 10px;
 }
+@media (max-width: 814px) {
+    .form-flex{
+      display: block !important;
+      margin-bottom: 20px;
+    }
+  }
 </style>
 <script>
 import useVuelidate from '@vuelidate/core'
